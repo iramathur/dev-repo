@@ -2,7 +2,7 @@
 
 resource "azurerm_resource_group" "main" {
   name     = "${var.resourceGroup}"
-  location = "${var.location}"
+  location = "${var.region}"
 }
 
 resource "azurerm_virtual_network" "main" {
