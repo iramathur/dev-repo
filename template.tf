@@ -68,7 +68,7 @@ resource "azurerm_virtual_machine" "main" {
 
 resource "azurerm_public_ip" "test" {
   name                = "${var.prefix}-PublicIp"
-  location            = "${var.location}"
+  location            = "${var.region}"
   resource_group_name = "${azurerm_resource_group.main.name}"
   allocation_method   = "Static"
 
