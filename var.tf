@@ -6,7 +6,7 @@ variable "location" {
   description = "The Azure Region in which all resources in this example should be created"
 }
 
-variable "task" {
+variable "task1" {
   description = "The Azure Region in which all resources in this example should be created"
 }
 
