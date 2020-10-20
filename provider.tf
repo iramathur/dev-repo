@@ -1,9 +1,9 @@
-provider "azurerm" {
-  subscription_id = "${var.subscriptionId}"
-  client_id       = "${var.clientId}"
-  client_secret   = "${var.clientSecret}"
-  tenant_id       = "${var.tenantId}"
-#  features {}
-   version = "=1.44.0"
+terraform {
+  required_version = ">= 0.12"
 }
 
+provider "aws" {
+  access_key = "${var.accesskey}"
+  secret_key = "${var.secretkey}"
+  region = "${var.aws_region}"
+}
