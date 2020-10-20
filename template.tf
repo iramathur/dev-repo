@@ -4,6 +4,6 @@
 # }
 # Create ec2
 resource "aws_instance" "vm" {
-    ami = "ami-05ca073a83ad2f28c"
+    ami = "ami-6bcfc42e"
     instance_type = "t2.micro"
 }
